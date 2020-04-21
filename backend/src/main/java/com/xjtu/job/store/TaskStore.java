@@ -1,8 +1,12 @@
 package com.xjtu.job.store;
+
+
+import com.google.gson.*;
+
 import com.xjtu.job.model.Task;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import com.google.gson.*;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -12,6 +16,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+
 @Service
 public class TaskStore {
     @Value("${todo.store.filename}")
@@ -55,7 +60,10 @@ public class TaskStore {
                 .registerTypeAdapter(LocalDateTime.class, (JsonSerializer<LocalDateTime>)
                         (localDateTime, typeOfT, context) -> new JsonPrimitive(localDateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"))))
                 .create();
+
+
     }
 
 
 }
+

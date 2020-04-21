@@ -1,5 +1,4 @@
 package com.xjtu.job;
-
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
@@ -23,34 +22,13 @@ public class TasksIntegrationTests {
     private MockMvc mockMvc;
 
     @Test
-    @Order(1)
-    public void noParamTasksShouldReturnAllTasksFromService() throws Exception {
-        this.mockMvc.perform(get("/api/tasks")).andDo(print()).andExpect(status().isOk())
-                .andExpect(jsonPath("$[0].content").value("test"));
-    }
-
-    @Test
-    @Order(3)
-    public void shouldGetTaskByTaskId() throws Exception {
-        this.mockMvc.perform(get("/api/tasks/2")).andDo(print()).andExpect(status().isOk())
-                .andExpect(jsonPath("$.content").value("check if it works"));
-    }
-
-    @Test
-    @Order(6)
-    public void shouldGetNotFoundWhenTaskDoesNotExist() throws Exception {
-        this.mockMvc.perform(delete("/api/tasks/2")
+    @Order(2)
+    public void shouldSaveTask() throws Exception {
+        this.mockMvc.perform(post("/api/tasks")
+                .content("{ \"id\" : 2, \"content\" : \"check if it works\" }")
                 .contentType(MediaType.APPLICATION_JSON))
-                .andDo(print()).andExpect(status().isNotFound());
-    }
-
-
-    @Test
-    @Order(5)
-    public void shouldDeleteByTaskId() throws Exception {
-        this.mockMvc.perform(delete("/api/tasks/2")
-                .contentType(MediaType.APPLICATION_JSON))
-                .andDo(print()).andExpect(status().isNoContent());
+                .andDo(print())
+                .andExpect(status().isCreated());
     }
 
 

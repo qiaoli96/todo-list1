@@ -3,11 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="6f42a070-5a0e-4fa8-baef-66ec6889b190" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xjtu/job/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xjtu/job/service/TaskService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/xjtu/job/TasksIntegrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/xjtu/job/TasksIntegrationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/xjtu/job/controller/TaskControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/xjtu/job/controller/TaskControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/xjtu/job/service/TaskServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/xjtu/job/service/TaskServiceTest.java" afterDir="false" />
     </list>
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/RestServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xjtu/job/RestServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xjtu/job/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xjtu/job/service/TaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xjtu/job/store/TaskStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xjtu/job/store/TaskStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RestServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/xjtu/job/RestServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TasksIntegrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/xjtu/job/TasksIntegrationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/xjtu/job/controller/TaskControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/xjtu/job/controller/TaskControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/xjtu/job/service/TaskServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/xjtu/job/service/TaskServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/xjtu/job/store/TaskStoreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/xjtu/job/store/TaskStoreTest.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+>>>>>>> create test
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,30 +36,7 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="backend" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="backend" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="backend" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="backend" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -75,10 +65,15 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
+>>>>>>> create test
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -97,6 +92,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Gradle.RestServiceApplicationTests">
     <configuration name="RestServiceApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -118,6 +114,21 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+=======
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+>>>>>>> create test
     <configuration name="RestServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="backend.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xjtu.job.RestServiceApplication" />
@@ -143,13 +154,31 @@
       <updated>1587456624052</updated>
       <workItem from="1587456627058" duration="2300000" />
       <workItem from="1587459951495" duration="3830000" />
+<<<<<<< HEAD
       <workItem from="1587472003644" duration="4707000" />
       <workItem from="1587476842433" duration="971000" />
+=======
+      <workItem from="1587473420861" duration="483000" />
+      <workItem from="1587473960306" duration="3373000" />
+>>>>>>> create test
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="51" y="214" width="1114" height="676" key="#Project_Structure" timestamp="1587460345709">

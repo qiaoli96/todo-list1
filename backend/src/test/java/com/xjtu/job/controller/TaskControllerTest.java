@@ -1,8 +1,9 @@
 package com.xjtu.job.controller;
+
 import com.xjtu.job.model.Task;
 import com.xjtu.job.service.TaskService;
-
 import com.google.gson.Gson;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +23,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
 
 
 
@@ -58,6 +60,15 @@ public class TaskControllerTest {
         when(service.find(3L)).thenReturn(Optional.of(new Task(3L, "X")));
         this.mockMvc.perform(get("/api/tasks/3")).andDo(print()).andExpect(status().isOk())
                 .andExpect(jsonPath("$.content").value("X"));
+    }
+    @Test
+    public void shouldCreateTask() throws Exception {
+        Task task = new Task(1L, "new");
+        Task savedTask = new Task(1L, "new");
+        when(service.saveTask(task)).thenReturn(savedTask);
+        this.mockMvc.perform(post("/api/tasks")
+                .contentType(MediaType.APPLICATION_JSON).content(new Gson().toJson(task)))
+                .andDo(print()).andExpect(status().isCreated());
     }
 
 
