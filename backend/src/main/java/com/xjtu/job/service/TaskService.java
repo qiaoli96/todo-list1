@@ -15,6 +15,15 @@ public class TaskService {
     @Autowired
     public TaskStore store;
 
+
+    public List<Task> getAll() {
+        return null;
+    }
+
+    public Optional<Task> find(Long id) {
+        return null;
+    }
+
     public Optional<Task> delete(Long id) {
         List<Task> tasks = store.readTasks();
         Optional<Task> any = tasks.stream().filter(task1 -> task1.getId() == id).findAny();

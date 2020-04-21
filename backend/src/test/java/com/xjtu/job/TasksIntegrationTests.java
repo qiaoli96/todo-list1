@@ -23,6 +23,29 @@ public class TasksIntegrationTests {
     private MockMvc mockMvc;
 
     @Test
+    @Order(1)
+    public void noParamTasksShouldReturnAllTasksFromService() throws Exception {
+        this.mockMvc.perform(get("/api/tasks")).andDo(print()).andExpect(status().isOk())
+                .andExpect(jsonPath("$[0].content").value("test"));
+    }
+
+    @Test
+    @Order(3)
+    public void shouldGetTaskByTaskId() throws Exception {
+        this.mockMvc.perform(get("/api/tasks/2")).andDo(print()).andExpect(status().isOk())
+                .andExpect(jsonPath("$.content").value("check if it works"));
+    }
+
+    @Test
+    @Order(6)
+    public void shouldGetNotFoundWhenTaskDoesNotExist() throws Exception {
+        this.mockMvc.perform(delete("/api/tasks/2")
+                .contentType(MediaType.APPLICATION_JSON))
+                .andDo(print()).andExpect(status().isNotFound());
+    }
+
+
+    @Test
     @Order(5)
     public void shouldDeleteByTaskId() throws Exception {
         this.mockMvc.perform(delete("/api/tasks/2")

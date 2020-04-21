@@ -10,6 +10,7 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,6 +39,27 @@ public class TaskControllerTest {
     void setUp() {
         tasks.add(new Task(1L, "a"));
     }
+
+    @Test
+    public void shouldGetAll() throws Exception {
+        when(service.getAll()).thenReturn(tasks);
+        this.mockMvc.perform(get("/api/tasks")).andDo(print()).andExpect(status().isOk())
+                .andExpect(jsonPath("$[0].content").value("a"));
+    }
+
+    @Test
+    public void shouldReturnNotFoundWhenFindByIdIfNotPresent() throws Exception {
+        when(service.find(3L)).thenReturn(Optional.empty());
+        this.mockMvc.perform(get("/api/tasks/3")).andDo(print()).andExpect(status().isNotFound());
+    }
+
+    @Test
+    public void shouldFindTaskByIdIfPresent() throws Exception {
+        when(service.find(3L)).thenReturn(Optional.of(new Task(3L, "X")));
+        this.mockMvc.perform(get("/api/tasks/3")).andDo(print()).andExpect(status().isOk())
+                .andExpect(jsonPath("$.content").value("X"));
+    }
+
 
     @Test
     public void shouldDeleteWhenExist() throws Exception {
