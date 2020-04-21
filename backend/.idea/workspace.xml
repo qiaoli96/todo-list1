@@ -1,26 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6f42a070-5a0e-4fa8-baef-66ec6889b190" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xjtu/job/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xjtu/job/service/TaskService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/xjtu/job/TasksIntegrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/xjtu/job/TasksIntegrationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/xjtu/job/controller/TaskControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/xjtu/job/controller/TaskControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/xjtu/job/service/TaskServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/xjtu/job/service/TaskServiceTest.java" afterDir="false" />
-    </list>
-=======
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xjtu/job/RestServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xjtu/job/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xjtu/job/service/TaskService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xjtu/job/store/TaskStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xjtu/job/store/TaskStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RestServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/xjtu/job/RestServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TasksIntegrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/xjtu/job/TasksIntegrationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/xjtu/job/controller/TaskControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/xjtu/job/controller/TaskControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/xjtu/job/service/TaskServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/xjtu/job/service/TaskServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/xjtu/job/store/TaskStoreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/xjtu/job/store/TaskStoreTest.java" afterDir="false" />
+    <list default="true" id="5b3da000-d912-4b60-9f98-63e93422b1d5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e2e/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../e2e/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e2e/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../e2e/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e2e/test/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/../e2e/test/bootstrap.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
->>>>>>> create test
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,85 +23,54 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Todo" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Todo" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Todo" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Todo" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Todo" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="org.springframework.boot:spring-boot-starter-web:2.2.0.RELEASE" type="cfea851d:ExternalSystemViewDefaultContributor$LibraryDependencyDataExternalSystemNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
       </state>
     </system>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1aqIJPVALLs2J33Csottqytc8A0" />
+  <component name="ProjectId" id="1anl4iWx2F2bhP2mXiYWRXbvXon" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent">
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-<<<<<<< HEAD
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-=======
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
->>>>>>> create test
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="show.unlinked.gradle.project.popup" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../todo-list1/backend/build.gradle" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.xjtu.job.store" />
-      <recent name="com.xjtu.job.service" />
-      <recent name="com.xjtu.job.controller" />
-      <recent name="com.xjtu.job.model" />
-      <recent name="com.xjtu.job" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test/resources" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
-  </component>
-<<<<<<< HEAD
-  <component name="RunManager" selected="Gradle.RestServiceApplicationTests">
-    <configuration name="RestServiceApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.xjtu.job.RestServiceApplicationTests&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-=======
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -127,40 +83,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
->>>>>>> create test
-    <configuration name="RestServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="backend.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xjtu.job.RestServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Gradle.RestServiceApplicationTests" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6f42a070-5a0e-4fa8-baef-66ec6889b190" name="Default Changelist" comment="" />
-      <created>1587456624052</created>
+      <changelist id="5b3da000-d912-4b60-9f98-63e93422b1d5" name="Default Changelist" comment="" />
+      <created>1587379048815</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1587456624052</updated>
-      <workItem from="1587456627058" duration="2300000" />
-      <workItem from="1587459951495" duration="3830000" />
-<<<<<<< HEAD
-      <workItem from="1587472003644" duration="4707000" />
-      <workItem from="1587476842433" duration="971000" />
-=======
-      <workItem from="1587473420861" duration="483000" />
-      <workItem from="1587473960306" duration="3373000" />
->>>>>>> create test
+      <updated>1587379048815</updated>
+      <workItem from="1587379051693" duration="2442000" />
+      <workItem from="1587386710014" duration="1449000" />
+      <workItem from="1587463227915" duration="897000" />
+      <workItem from="1587473100312" duration="5965000" />
     </task>
     <servers />
   </component>
@@ -179,27 +115,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="51" y="214" width="1114" height="676" key="#Project_Structure" timestamp="1587460345709">
-      <screen x="51" y="24" width="1869" height="1056" />
-    </state>
-    <state x="51" y="214" width="1114" height="676" key="#Project_Structure/51.24.1869.1056@51.24.1869.1056" timestamp="1587460345709" />
-    <state x="659" y="384" width="652" height="320" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1587476708533">
-      <screen x="51" y="24" width="1869" height="1056" />
-    </state>
-    <state x="659" y="384" width="652" height="320" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/51.24.1869.1056@51.24.1869.1056" timestamp="1587476708533" />
-    <state x="713" y="297" key="FileChooserDialogImpl" timestamp="1587472052815">
-      <screen x="51" y="24" width="1869" height="1056" />
-    </state>
-    <state x="713" y="297" key="FileChooserDialogImpl/51.24.1869.1056@51.24.1869.1056" timestamp="1587472052815" />
-    <state x="565" y="367" key="com.intellij.ide.util.TipDialog" timestamp="1587459952543">
-      <screen x="51" y="24" width="1869" height="1056" />
-    </state>
-    <state x="565" y="367" key="com.intellij.ide.util.TipDialog/51.24.1869.1056@51.24.1869.1056" timestamp="1587459952543" />
-    <state x="61" y="153" key="new project wizard" timestamp="1587472658193">
-      <screen x="51" y="24" width="1869" height="1056" />
-    </state>
-    <state x="61" y="153" key="new project wizard/51.24.1869.1056@51.24.1869.1056" timestamp="1587472658193" />
   </component>
 </project>

@@ -16,6 +16,16 @@ public class TaskController {
     @Autowired
     public TaskService taskService;
 
+    @PostMapping(consumes = "application/json", produces = "application/json")
+    public ResponseEntity<Task> create(@RequestBody Task task) {
+        taskService.saveTask(task);
+        URI location = ServletUriComponentsBuilder.fromCurrentRequest()
+                .path("/tasks/{id}")
+                .buildAndExpand(task.getId())
+                .toUri();
+        return ResponseEntity.created(location).build();
+    }
+
     @DeleteMapping(path = "/{id}")
     public ResponseEntity delete(@PathVariable Long id) {
         Optional<Task> deletedTask = taskService.delete(id);
