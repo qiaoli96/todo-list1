@@ -16,6 +16,16 @@ public class TaskController {
     @Autowired
     public TaskService taskService;
 
+    @GetMapping(produces = "application/json")
+    public List<Task> list() {
+        return taskService.getAll();
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Task> find(@PathVariable Long id) {
+        return ResponseEntity.of(taskService.find(id));
+    }
+
     @PostMapping(consumes = "application/json", produces = "application/json")
     public ResponseEntity<Task> create(@RequestBody Task task) {
         taskService.saveTask(task);
