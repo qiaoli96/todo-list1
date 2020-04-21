@@ -1,8 +1,5 @@
 package com.xjtu.job.store;
-<<<<<<< HEAD
 
-=======
->>>>>>> create test
 import com.xjtu.job.model.Task;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
@@ -26,15 +23,7 @@ public class TaskStoreTest {
         taskStore.writeTasks(Arrays.asList(createTask(1L, "test")));
     }
 
-<<<<<<< HEAD
-=======
-    private Task createTask(long l, String test) {
-        Task task = new Task(l, test);
-        task.setUpdatedAt();
-        return task;
-    }
 
->>>>>>> create test
     @Test
     public void shouldReadTasks() {
         List<Task> tasks = taskStore.readTasks();
@@ -43,7 +32,7 @@ public class TaskStoreTest {
         assertEquals("test", tasks.get(0).getContent());
         assertEquals(LocalDateTime.of(2020, 4, 5, 0, 0), tasks.get(0).getUpdatedAt());
     }
-<<<<<<< HEAD
+
 
     @Test
     public void shouldWriteTasks() {
@@ -56,8 +45,7 @@ public class TaskStoreTest {
         assertNotNull(tasksInStore.get(1).getUpdatedAt());
         assertEquals("task 2", tasksInStore.get(1).getContent());
     }
-=======
->>>>>>> create test
+
 
     private Task createTask(long l, String test) {
         Task task = new Task(l, test);
