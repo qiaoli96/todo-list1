@@ -1,3 +1,5 @@
+package com.xjtu.job;
+
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
@@ -17,6 +19,16 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureMockMvc
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class TasksIntegrationTests {
+    @Autowired
+    private MockMvc mockMvc;
+
+    @Test
+    @Order(5)
+    public void shouldDeleteByTaskId() throws Exception {
+        this.mockMvc.perform(delete("/api/tasks/2")
+                .contentType(MediaType.APPLICATION_JSON))
+                .andDo(print()).andExpect(status().isNoContent());
+    }
 
 
 

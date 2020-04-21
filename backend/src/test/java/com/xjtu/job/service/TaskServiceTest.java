@@ -1,5 +1,8 @@
 package com.xjtu.job.service;
 
+import com.xjtu.job.store.TaskStore;
+import com.xjtu.job.model.Task;
+import com.xjtu.job.service.TaskService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -17,5 +20,38 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 @SpringBootTest
 public class TaskServiceTest {
+    @Mock
+    private TaskStore taskStore;
 
+    @InjectMocks
+    private TaskService taskService = new TaskService();
+
+    private ArrayList<Task> tasks;
+
+    @BeforeEach
+    void setUp() {
+        tasks = new ArrayList<>();
+    }
+
+    @Test
+    public void shouldDeleteTask() {
+        tasks.add(new Task(1L, "task"));
+        when(taskStore.readTasks()).thenReturn(tasks);
+
+        Optional<Task> optionalTask = taskService.delete(1L);
+
+        Task task = optionalTask.get();
+        assertEquals(1L, task.getId());
+        verify(taskStore).writeTasks(any());
+    }
+
+    @Test
+    public void shouldNotDeleteTaskWhenNotExist() {
+        when(taskStore.readTasks()).thenReturn(tasks);
+
+        Optional<Task> optionalTask = taskService.delete(1L);
+
+        assertFalse(optionalTask.isPresent());
+        verify(taskStore, new Times(0)).writeTasks(any());
+    }
 }
